@@ -1,1 +1,5 @@
-﻿
+﻿  vec3.cpp
+  Source.cpp
+c:\users\sugad.mankar\desktop\raytracer\helloworld\helloworld\source.cpp(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Generating Code...
+  HelloWorld.vcxproj -> C:\Users\Sugad.mankar\Desktop\RayTracer\HelloWorld\Debug\HelloWorld.exe
