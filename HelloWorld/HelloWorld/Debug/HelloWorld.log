@@ -1,5 +1,7 @@
-﻿  vec3.cpp
+﻿  vec3.h
+c:\users\sugad.mankar\desktop\raytracer\helloworld\helloworld\vec3.h(165): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   Source.cpp
-c:\users\sugad.mankar\desktop\raytracer\helloworld\helloworld\source.cpp(20): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\sugad.mankar\desktop\raytracer\helloworld\helloworld\vec3.h(165): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\sugad.mankar\desktop\raytracer\helloworld\helloworld\source.cpp(21): warning C4305: 'argument': truncation from 'double' to 'float'
   Generating Code...
   HelloWorld.vcxproj -> C:\Users\Sugad.mankar\Desktop\RayTracer\HelloWorld\Debug\HelloWorld.exe
