@@ -1,6 +1,6 @@
 #include<iostream>
 #include "vec3.h"
-int main() {
+int mainraw() {
 
 	int nx = 200;
 	int ny = 55;
