@@ -13,7 +13,7 @@ int main() {
 
 	void HelloBMPCheckerBoard(const char* fileName, int nx, int ny);
 
-	//void HelloSTBPNGCheckerBoard(const char* fileName, int nx, int ny);
+	void HelloSTBPNGCheckerBoard(const char* fileName, int nx, int ny);
 
 	int nx = 64;
 	int ny = 64;
@@ -28,8 +28,34 @@ int main() {
 	unsigned char* data = stbi_load("checker.bmp",&x,&y,&n,0);
 	stbi_write_png("foo_out.png",x,y,3,data,0);
 	
+	HelloSTBPNGCheckerBoard("bar_out.png", 64, 64);
 
 	return 0;
+}
+
+void HelloSTBPNGCheckerBoard(const char* fileName, int nx, int ny) {
+	
+	unsigned char* data = NULL;
+
+	data = (unsigned char*)malloc(3 * nx * ny); // 3 for x y z
+
+	memset(data,//dst
+			0 , //val
+			3 * nx * ny //size_t
+	);
+	int c = 0;
+	for (int j = ny - 1; j >= 0; j--) {
+		for (int i = 0; i < nx; i++) {
+
+			c = (((i & 0x8) == 0) ^ ((j & 0x8) == 0)) * 255;
+
+			data[(i + j * nx) * 3 + 0] = (unsigned char)(c);
+			data[(i + j * nx) * 3 + 1] = (unsigned char)(c);
+			data[(i + j * nx) * 3 + 2] = (unsigned char)(c);
+		}
+	}
+
+	stbi_write_png(fileName, nx, ny, 3, data, 0);
 }
 
 void HelloPPM(const char* fileName,int nx,int ny) {
