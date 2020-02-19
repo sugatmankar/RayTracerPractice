@@ -37,11 +37,11 @@ int main(void) {
 
 	//HelloSTBPNGCheckerBoard("bar_out.png", 64, 64);
 	
-	//HelloSTBPNGSimple("foo_bar.png",128,128);
+	HelloSTBPNGSimple("foo_bar.png",128,128);
 	
 	//HelloSTBPNGVec3("foo_bar.png", 256, 256);
 
-	HelloSTBPNGVec3Ray("foo_bar_ray.png", 200, 100);
+	//HelloSTBPNGVec3Ray("foo_bar_ray.png", 200, 100);
 
 	return 0;
 }
